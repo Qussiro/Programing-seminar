@@ -1,0 +1,59 @@
+	Argumenty funkcie
+
+void pascal dist(int a, int b) - kopiruje hodnoty v opacnom smere (b, a) 
+
+#typedef sint short int
+
+void mima(sint a, sint b, sint *l, sint *u)
+{
+	if(a < b) 
+	{
+		*l = a;
+		*u = b;
+	}
+	else 
+	{
+		*l = b;
+		*u = a;
+	}
+}
+
+void main()
+{
+	sint a, b, c, d;
+	mima(a, b, &c, &d);
+}
+
+     code.c
+	↓
+   Preprocessor - sa venuje vsetky riadky zacinajuce z # a idu dosledky
+	↓
+    Kompilator - preklad hlaicovych slov do instrukcii processoru(kazda funkcia sa kompiluje osva) 
+	↓
+     Linker - pospaja funkcie do spustitelneho suboru a poprepaja ich tym ze spocita velkosti skokov ktore treba pred vykonanim programu spravit pri volanii funkcii
+	↓
+    code.exe
+
+
+#define N 20    <---   N je symbolicka konstantna
+
+for(i = 0; i < N; i++)  (namiesto N priradi 20)
+
+
+#typedef OK 0
+#typedef FAIL 1   --->   return FAIL; (pre citatelnost`)
+
+typedef struct {
+	int a;
+	int b;
+	...
+	...
+	char x;
+	...
+} vvs;
+
+void funkcia(vvs *a)
+{
+	(*a).x	
+	a->x	(sintakticky cukor pre riadok navysse)
+}

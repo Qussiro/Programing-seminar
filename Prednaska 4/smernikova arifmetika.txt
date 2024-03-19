@@ -1,0 +1,29 @@
+Smernikova Aritmetica
+
+A - hodnota smernika
+n - cele cislo(aj moze byt zaporne)
+
+A + n = smernik(posunut n pozicij)
+
+char *p
+(p = 50000)
+p + 3 (50003)
+p - 6 (49994)
+
+mozeme pripocitat` aj premennu typu int (p + i)
+
+
+short int *p
+(p = 50000)
+p + 3 (50006)
+p - 6 (49988)
+
+ked pripocitame premennu typu int (p + 2i) pretoze short int je 2 baity
+
+sizeof - klucove slovo
+
+
+
+aux = a[0]			aux = *(p+0)
+a[0] = a[4]	iste ako	*(p+0) = 
+a[4] = aux			*(p+4) = aux
