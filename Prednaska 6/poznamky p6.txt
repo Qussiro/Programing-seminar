@@ -1,0 +1,8 @@
+	Allokacia pamati v C
+
+Allokacia pamati - rezervuje pamat
+Staticka alokacia - pri deklaracii premennych
+
+
+void *malloc(size_t size) <--- funkcia allokuje suvisly blok pamati o velkosti size bajtov
+void free(void *ptr) <--- uvoln`ni (deallocuje) dynamicky allokovany blok
